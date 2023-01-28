@@ -1,0 +1,7 @@
+env
+.vscode
+main/__pycache__
+main/cache/*
+main/pics_dump/*
+.DS_Store
+.DS_Store?
