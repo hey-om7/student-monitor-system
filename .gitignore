@@ -2,6 +2,8 @@ env
 .vscode
 main/__pycache__
 main/cache/*
+!main/cache/.tempcache
 main/pics_dump/*
+!main/pics_dump/.temppicsdump
 .DS_Store
 .DS_Store?
