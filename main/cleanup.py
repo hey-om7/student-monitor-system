@@ -1,8 +1,7 @@
 import os
-import datetime
 
 
-def cleanup():
+def cleanup(currentTime: str):
     try:
         os.remove("cache/img_screenshot.png")
     except:
@@ -11,6 +10,5 @@ def cleanup():
         os.remove("cache/img_webcam.jpg")
     except:
         pass
-    ct = datetime.datetime.now()
-    currentTime = str(ct).split(".")[0]
+
     os.rename("cache/combined.jpg", f"pics_dump/{currentTime}.jpg")
